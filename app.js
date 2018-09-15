@@ -71,9 +71,9 @@ app.use(function (err, req, res, next) {
 //   console.log(app.get('port'))
 // })
 
-var port = process.env.PORT || 8080;
-app.listen(port, function () {
-  console.log(port);
-});
+// var port = process.env.PORT || 8080;
+// app.listen(port, function () {
+//   console.log(port);
+// });
 
 module.exports = app;

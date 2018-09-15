@@ -64,12 +64,11 @@ app.use(function(err, req, res, next) {
 });
 
 //set port
-app.set('port', 'https://metem-api.herokuapp.com/');
+app.set('port', (process.env.PORT) || 3000);
 
 //listen to port
 app.listen(app.get('port'), function () {
   console.log('listening @ 8080')
 })
-
 
 module.exports = app;

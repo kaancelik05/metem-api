@@ -64,7 +64,7 @@ app.use(function(err, req, res, next) {
 });
 
 //set port
-app.set('port', (process.env.PORT) || 3000);
+app.set('port', (process.env.PORT));
 
 //listen to port
 app.listen(app.get('port'), function () {

@@ -16,7 +16,7 @@ var options = {
   replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
 };
 
-mongoose.connect('mongodb://kcelik:Karakartal05@ds145921.mlab.com:45921/metem-api');
+mongoose.connect('mongodb://kcelik:Karakartal05@ds145921.mlab.com:45921/metem-api', { useNewUrlParser: true });
 var db = mongoose.connection;
 
 db.on('error', function (err) {

@@ -64,11 +64,11 @@ app.use(function(err, req, res, next) {
 });
 
 //set port
-app.set('port', (process.env.PORT || 8080));
+// app.set('port', (process.env.PORT || 8080));
 
 //listen to port
-app.listen(app.get('port'), function () {
-  console.log('listening @ 8080')
+app.listen(process.env.PORT , function () {
+  console.log(process.env.PORT)
 })
 
 module.exports = app;
